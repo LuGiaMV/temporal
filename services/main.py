@@ -8,7 +8,7 @@ app = FastAPI()
 @app.get("/")
 def index():
     return {
-        "Su red está siendo atacada"
+        "Message" : "Hello worlds"
     }
 
 @app.get("/character/{id}", response_model=model)
